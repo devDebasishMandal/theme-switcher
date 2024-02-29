@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import StyleProvider from './context/styleProvider';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <StyleProvider>
     <App />
-  </React.StrictMode>
+  </StyleProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
